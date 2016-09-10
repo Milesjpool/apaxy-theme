@@ -1,4 +1,6 @@
 #!/bin/bash
 
+DIR="$( cd "$( dirname "${BASH_SOURCE[0]}" )" && pwd )"
+
 echo "Creating .htaccess symlink in parent folder"
-ln parent.htaccess ../.htaccess
+ln $DIR/parent.htaccess $DIR/../.htaccess
